@@ -7,7 +7,7 @@ export default function Footer() {
         <br />
             Coded by Kristina Rericha 
           <br />
-          <a href="https://github.com/Krisi28/React_WeatherApp">GitHub</a>
+          <a href="https://github.com/Krisi28/shecodes-react_final_8.3.">GitHub</a>
           <br />
           <br />
           </div>

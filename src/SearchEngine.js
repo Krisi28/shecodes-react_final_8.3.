@@ -6,7 +6,7 @@ import "./Result.css";
 
 
 export default function SearchEngine() {
-  let [city, setCity] = useState("Vienna");
+  let [city, setCity] = useState("");
   let [weather, setWeather] = useState("");
   let [loaded, setLoaded] = useState(false);
 
