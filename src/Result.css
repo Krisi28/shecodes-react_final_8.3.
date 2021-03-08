@@ -4,7 +4,13 @@
 }
 
 .temperature {
-    font-size: large;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.unit {
+    font-size: 40px;
     font-weight: bold;
     color: white;
 }
