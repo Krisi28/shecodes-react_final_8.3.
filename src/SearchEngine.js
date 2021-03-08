@@ -57,7 +57,7 @@ export default function SearchEngine() {
           <br />
           <span className="Date"><FormattedDate date={weather.date} /></span>
           <br />
-          <ul>
+          <ul className="result-list">
             <li><WeatherTemperature celsius={weather.Temperature} /></li>
             <br />
             <li>Description: {weather.Condition}</li>
