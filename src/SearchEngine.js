@@ -59,6 +59,7 @@ export default function SearchEngine() {
           <br />
           <ul>
             <li><WeatherTemperature celsius={weather.Temperature} /></li>
+            <br />
             <li>Description: {weather.Condition}</li>
             <li>Humidity: {weather.Humidity}%</li>
             <li>Wind: {Math.round(weather.Wind)}km/h</li>
