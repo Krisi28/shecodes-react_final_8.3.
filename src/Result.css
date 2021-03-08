@@ -1,6 +1,7 @@
 .Date {
-    font-size: large;
+    font-size: 25px;
     font-weight: bold;
+    color: white;
 }
 
 .temperature {
