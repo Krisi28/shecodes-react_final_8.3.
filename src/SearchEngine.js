@@ -10,16 +10,16 @@ export default function SearchEngine() {
   let [loaded, setLoaded] = useState(false);
 
   function displayWeather(response) {
-    setLoaded(true);
     setWeather({
       City: city,
-      date: new Date(response.data.dt * 1000), 
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       Humidity: response.data.main.humidity,
       Condition: response.data.weather[0].main,
       Wind: response.data.wind.speed,
-      icon: response.data.weather[0].icon
+      icon: response.data.weather[0].icon,
     });
+    setLoaded(true);
   }
 
   function handleSubmit(event) {
