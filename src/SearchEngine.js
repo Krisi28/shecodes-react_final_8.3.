@@ -1,9 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
-import WeatherTemperature from "./WeatherTemperature";
 import "./Result.css";
-import WeatherIcon from "./WeatherIcon.js";
+import WeatherInfo from "./WeatherInfo.js";
 
 
 export default function SearchEngine() {
@@ -56,16 +54,8 @@ export default function SearchEngine() {
           </div>
           <h2>The current weather is:</h2>
           <br />
-          <span className="Date"><FormattedDate date={weather.date} /></span>
-          <br />
-          <ul className="result-list">
-            <li><WeatherTemperature celsius={weather.Temperature} /></li>
-            <br />
-            <li>Description: {weather.Condition}</li>
-            <li>Humidity: {weather.Humidity}%</li>
-            <li>Wind: {Math.round(weather.Wind)}km/h</li>
-            <li className="Icon"><WeatherIcon code={props.data.icon} /></li>
-          </ul>
+          <span><WeatherInfo data={weather}/>
+          </span>
         </div>
       </div>
     );
