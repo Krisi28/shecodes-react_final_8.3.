@@ -58,14 +58,6 @@ h1 {
   text-align: center;
 }
 
-#current-location-button {
-  background-color: #fca3cc;
-  color: white;
-  border: #bde6eb;
-  border-radius: 3px;
-  font-family: Arial, Helvetica, sans-serif;
-  border: 2px solid white;
-}
 
 #search-button {
   background-color: #bde6eb;
@@ -76,16 +68,6 @@ h1 {
   border: 2px solid white;
 }
 
-#input-city {
-  color: #bde6eb;
-  background-color: white;
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 5px;
-  text-align: center;
-}
 
 li {
   font-family: Arial, Helvetica, sans-serif;
@@ -94,27 +76,7 @@ li {
   font-style: bold;
 }
 
-#current-time {
-  color: #bde6eb;
-  background-color: white;
-  font-weight: bold;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 5px;
-  text-align: center;
-}
 
-#weather-input-city {
-  color: #fca3cc;
-  background-color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-}
 
 .units {
   background-color: white;
@@ -127,35 +89,3 @@ li {
   text-align: center;
 }
 
-#condition {
-  color: #fdcfdf;
-  background-color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 5px;
-}
-
-#humidity {
-  color: #fbbedf;
-  background-color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 5px;
-}
-
-#wind {
-  color: #fca3cc;
-  background-color: white;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 5px;
-  border-radius: 5px;
-}
-
-#icon {
-  display: block;
-  text-align: center;
-  position: absolute;
-}

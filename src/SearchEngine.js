@@ -53,7 +53,6 @@ export default function SearchEngine() {
             {form}
           </div>
           <h2>The current weather is:</h2>
-          <br />
           <span><WeatherInfo data={weather}/>
           </span>
         </div>
