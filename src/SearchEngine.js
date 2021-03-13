@@ -14,7 +14,7 @@ export default function SearchEngine() {
     setWeather({
       City: city,
       date: new Date(response.data.dt * 1000), 
-      Temperature: response.data.main.temp,
+      temperature: response.data.main.temp,
       Humidity: response.data.main.humidity,
       Condition: response.data.weather[0].main,
       Wind: response.data.wind.speed,
