@@ -11,7 +11,7 @@ export default function SearchEngine(props) {
 
   function displayWeather(response) {
     setWeather({
-      City: response.data.name,
+      city: response.data.name,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       Humidity: response.data.main.humidity,
