@@ -4,6 +4,12 @@
     color: white;
 }
 
+.DisplayedCity {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
 .temperature {
     font-size: 40px;
     font-weight: bold;
@@ -11,8 +17,9 @@
 }
 
 .Icon {
-    margin-right: 10px;
+    margin-left: 100px;
     margin-top: 5px;
+    display: block;
 }
 
 .unit {

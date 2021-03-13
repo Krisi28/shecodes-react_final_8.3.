@@ -5,11 +5,13 @@ import WeatherTemperature from "./WeatherTemperature.js";
 import "./Result.css";
 
 export default function WeatherInfo(props) {
-    return (
-            <div className="container">
-              <div className="application">
+    return (      
+            <div className="container">     
+                <div className="application">
                 <span className="Date"><FormattedDate date={props.data.date} /></span>
+                <span className="DisplayedCity">{props.data.City}</span>
                 <br />
+                <h2>The current weather is:</h2>
                 <ul className="result-list">
                   <li><WeatherTemperature celsius={props.data.temperature} /></li>
                   <br />

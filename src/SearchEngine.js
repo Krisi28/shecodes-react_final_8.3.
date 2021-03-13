@@ -4,14 +4,14 @@ import "./Result.css";
 import WeatherInfo from "./WeatherInfo.js";
 
 
-export default function SearchEngine() {
-  let [city, setCity] = useState("");
+export default function SearchEngine(props) {
+  let [city, setCity] = useState(props.defaultCity);
   let [weather, setWeather] = useState("");
   let [loaded, setLoaded] = useState(false);
 
   function displayWeather(response) {
     setWeather({
-      City: city,
+      City: response.data.name,
       date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       Humidity: response.data.main.humidity,
@@ -52,7 +52,6 @@ export default function SearchEngine() {
           <div>
             {form}
           </div>
-          <h2>The current weather is:</h2>
           <span><WeatherInfo data={weather}/>
           </span>
         </div>
