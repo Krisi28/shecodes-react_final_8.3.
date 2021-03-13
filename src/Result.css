@@ -10,6 +10,11 @@
     color: white;
 }
 
+.Icon {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
 .unit {
     font-size: 40px;
     font-weight: bold;

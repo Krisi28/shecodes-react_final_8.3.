@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import "./Result.css";
+import WeatherIcon from "./WeatherIcon.js";
 
 
 export default function SearchEngine() {
@@ -19,7 +20,7 @@ export default function SearchEngine() {
       Humidity: response.data.main.humidity,
       Condition: response.data.weather[0].main,
       Wind: response.data.wind.speed,
-      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+      icon: response.data.weather[0].icon
     });
   }
 
@@ -63,9 +64,7 @@ export default function SearchEngine() {
             <li>Description: {weather.Condition}</li>
             <li>Humidity: {weather.Humidity}%</li>
             <li>Wind: {Math.round(weather.Wind)}km/h</li>
-            <li>
-              <img src={weather.icon} alt={weather.description} />
-            </li>
+            <li className="Icon"><WeatherIcon code={props.data.icon} /></li>
           </ul>
         </div>
       </div>
