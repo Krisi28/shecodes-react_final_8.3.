@@ -1,7 +1,7 @@
 .Date {
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: #bde6eb;
 }
 
 .DisplayedCity {
@@ -13,19 +13,20 @@
 .temperature {
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: #bde6eb;
 }
 
 .Icon {
     margin-left: 100px;
     margin-top: 5px;
     display: block;
+    text-align: center;
 }
 
 .unit {
     font-size: 40px;
     font-weight: bold;
-    color: white;
+    color: #bde6eb;
 }
 
 .result-list {

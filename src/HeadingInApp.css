@@ -2,6 +2,7 @@
     border: 2px solid #fca3cc;
     padding: 10px;
     margin: 0px 70px 0px 70px;
-    background-color: white;
-    color: #fca3cc;
+    background-color: #fca3cc;
+    color: #bde6eb;
+    text-shadow: white 1px 1px;
   }
