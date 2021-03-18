@@ -6,7 +6,7 @@ import WeatherInfo from "./WeatherInfo.js";
 
 export default function SearchEngine(props) {
   let [city, setCity] = useState(props.defaultCity);
-  let [weather, setWeather] = useState("");
+  let [weather, setWeather] = useState(props.defaultCity);
   let [loaded, setLoaded] = useState(false);
 
   function displayWeather(response) {

@@ -5,13 +5,14 @@ import reportWebVitals from './reportWebVitals';
 import SearchEngine from "./SearchEngine.js";
 import Heading from "./heading.js";
 import Footer from "./footer.js";
-import HeadingCurrentWeather from "./HeadingInApp.js"
+import HeadingCurrentWeather from "./HeadingInApp.js";
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Heading />
     <HeadingCurrentWeather />
-    <SearchEngine />
+    <SearchEngine defaultCity="Vienna" />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')
