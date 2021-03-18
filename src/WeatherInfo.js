@@ -11,7 +11,7 @@ export default function WeatherInfo(props) {
                 <span className="Date"><FormattedDate date={props.data.date} /></span>
                 <span className="DisplayedCity">{props.data.City}</span>
                 <br />
-                <h2>The current weather is:</h2>
+                <h2>The current weather in {props.data.city} is:</h2>
                 <ul className="result-list">
                   <li><WeatherTemperature celsius={props.data.temperature} /></li>
                   <br />
