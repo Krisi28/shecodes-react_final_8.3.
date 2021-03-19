@@ -2,13 +2,10 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Result.css";
 import WeatherInfo from "./WeatherInfo.js";
-
-
 export default function SearchEngine(props) {
   let [city, setCity] = useState(props.defaultCity);
-  let [weather, setWeather] = useState(props.defaultCity);
+  let [weather, setWeather] = useState(null);
   let [loaded, setLoaded] = useState(false);
-
   function displayWeather(response) {
     setWeather({
       city: response.data.name,
@@ -21,18 +18,18 @@ export default function SearchEngine(props) {
     });
     setLoaded(true);
   }
-
-  function handleSubmit(event) {
-    event.preventDefault();
+  function search() {
     let apiKey = "5d69d77efd19c056bafcabc326753fce";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
   }
-
+  function handleSubmit(event) {
+    event.preventDefault();
+    search();
+  }
   function updateCity(event) {
     setCity(event.target.value);
   }
-
   let form = (
     <form id="search-form" onSubmit={handleSubmit}>
       <input
@@ -44,20 +41,19 @@ export default function SearchEngine(props) {
       <input type="submit" value="Search" className="button" />
     </form>
   );
-
   if (loaded) {
     return (
       <div className="container">
         <div className="application">
-          <div>
-            {form}
-          </div>
-          <span><WeatherInfo data={weather}/>
+          <div>{form}</div>
+          <span>
+            <WeatherInfo data={weather} />
           </span>
         </div>
       </div>
     );
   } else {
+    search();
     return form;
   }
 }

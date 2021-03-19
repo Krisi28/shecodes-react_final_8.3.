@@ -6,7 +6,6 @@ function App() {
     <div className="App">
       <div className="container">
         <SearchEngine defaultCity="Vienna" />
-        <Footer />
       </div>
     </div>
   );
